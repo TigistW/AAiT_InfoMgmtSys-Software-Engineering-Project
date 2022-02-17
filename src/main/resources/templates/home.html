@@ -1,0 +1,368 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Dailycode</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}" />
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Display:wght@500;700;900&family=Sofia&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-primary my-2 my-sm-0" href="/login">Login</a>
+                        <div>
+                            <button type="submit" class="btn btn-primary">
+                            <a th:href="@{/login}">LOGIN</a></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <h1>Welcome to Daily AAIT</h1>
+    </div>
+    <div class="container">
+        <div class="row row align-items-center">
+           
+            <div class="col">
+                <img th:src="@{/images/844221.jpg}" width="400" height="300" alt="hero-picture" />
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+              
+    
+    <section class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Our Team Section</h2>
+                    <p>
+                        Four of our team members with their roles. we can say proudly that
+                        they are talented, dediacted and hard working. This project won't
+                        be in hand without them...
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-5 mt-4" />
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img th:src="@{/images/girl.svg}" class="img-fluid" alt="" />
+                        <div class="member-info">
+                            <div class="member-detail">
+                                <h4>Feven Tolla</h4>
+                                <span>Web developer</span>
+                            </div>
+                            <div class="social">
+                                <a href="facebook" aria-label="facebook link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="twitter" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+                                <a href="linked in" aria-label="linked in link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="instagram" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img th:src="@{/images/women.svg}" class="img-fluid" alt="" />
+                        <div class="member-info">
+                            <div class="member-detail">
+                                <h4>Tigist wondimenh</h4>
+                                <span>Web Developer</span>
+                            </div>
+                            <div class="social">
+                                <a href="facebook" aria-label="facebook link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="twitter" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+                                <a href="linked in" aria-label="linked in link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="instagram" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img th:src="@{/images/laddy.svg}" class="img-fluid" alt="" />
+                        <div class="member-info">
+                            <div class="member-detail">
+                                <h4>Mekdes kebede</h4>
+                                <span>Web designer</span>
+                            </div>
+                            <div class="social">
+                                <a href="facebook" aria-label="facebook link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="twitter" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+                                <a href="linked in" aria-label="linked in link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="instagram" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img th:src="@{/images/she.svg}" class="img-fluid" alt="" />
+                        <div class="member-info">
+                            <div class="member-detail">
+                                <h4>Tigist Zelalem</h4>
+                                <span>web designer</span>
+                            </div>
+                            <div class="social">
+                                <a href="facebook" aria-label="facebook link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="twitter" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+                                <a href="linked in" aria-label="linked in link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="instagram" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5" />
+        </div>
+    </section>
+
+  
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+                    aria-label="first link"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="twitter" role="button"
+                    aria-label="second link"><i class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="/instagram" role="button"
+                    aria-label="third link"><i class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="/linked in" role="button"
+                    aria-label="fourth link"><i class="fab fa-linkedin-in"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="github" role="button" aria-label="fifth link"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Dailycode.com</a>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Dailycode</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}" />
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{css/custom2.css}" rel="stylesheet" />
+    <!-- <link th:href="@{css/style.css}" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/custom2.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+
+
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" /> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Display:wght@500;700;900&family=Sofia&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="/aaitims/src/main/resources/static/css/bootstrap.css"> -->
+</head>
+
+<body>
+
+    <div class="container text-center mt-5  p-5">
+        <h1>Welcome to AAIT!</h1>
+    </div>
+    
+    <div class="container ">
+        <div class="row row align-items-center">
+            <div class="col-lg-6">
+                <h5 class="mt-3">
+                    
+                    Addis Ababa Institute of Technology.
+
+                    <br><br>
+                    Welcome visitor! We, at the AAIT are excited to have you.
+                    AAIT is the technological institute of Addis Ababa University,
+                    Located at 5 Kilo.
+
+
+
+                    <p class="lead text-secondary my-5">
+                        “Education is the most powerful weapon which you can use to change
+                        the world” - Nelson Mandela
+                    </p>
+                </h5>
+                <div class=" container align-center link">
+                    <button type="submit" class="btn btn-primary ">
+                        <a class="text-dark" th:href="@{/login}">LOGIN</a></button>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <img th:src="@{}" width="400" height="300" /> -->
+                <img src="/images/aa.svg" style="width: 90%;" alt="">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container mt-5 mb-3 shadow-sm ">
+        <div class="row welcome">
+            <div class="col-md-4">
+                <div class="card  mb-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+                            <div class="ms-2 c-details">
+                                <h6 class="mb-0">AAiT</h6> <span>Home of True wisdom</span>
+                            </div>
+                        </div>
+                        <div class="badge"></div>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="heading">Number of students <br>currently enrolled</h3>
+                        <div class="mt-5">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="mt-3"> <span class="text1">2500 Students<span class="text2"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card  mb-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
+                            <div class="ms-2 c-details">
+                                <h6 class="mb-0">AAiT</h6> <span>Home of True wisdom</span>
+                            </div>
+                        </div>
+                        <div class="badge"></div>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="heading">Number of Bachelor <br> degrees offered</h3>
+                        <div class="mt-5">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="mt-3"> <span class="text1">104 Bachelor Degree <span class="text2"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icon"> <i class="bx bxl-reddit"></i> </div>
+                            <div class="ms-2 c-details">
+                                <h6 class="mb-0">AAiT</h6> <span>Home of True wisdom</span>
+
+                            </div>
+                        </div>
+                        <div class="badge"></div>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="heading">Masters and PHD <br> Degrees Offered</h3>
+
+                        <div class="mt-5">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="mt-3"> <span class="text1">86 Masters and Phds<span class="text2"></span></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+                    aria-label="first link"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="twitter" role="button"
+                    aria-label="second link"><i class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="/instagram" role="button"
+                    aria-label="third link"><i class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="/linked in" role="button"
+                    aria-label="fourth link"><i class="fab fa-linkedin-in"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="github" role="button" aria-label="fifth link"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">AAiTIMS.com</a>
+        </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+    </footer>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

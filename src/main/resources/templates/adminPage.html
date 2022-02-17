@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Admin Dashboard</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+ 
+    <link rel="stylesheet" href="/css/style2.css">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/nav.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+    <script th:src="@{/js/bootstrap.js}"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+        <img src="images/home.svg" alt="logo" width="150" height="100" class="d-inline-block align-text-top" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse pdd" id="navbarNavAltMarkup">
+        <div class="navbar-nav pad fs-5">
+            <a class="nav-item nav-link navs fs-5 active" href="/Home">Home</a>
+            <a class="nav-item nav-link navs fs-5" href="/adminCourseView">Courses</a>
+            <a class="nav-item nav-link navs fs-5" href="/images">Advisors</a>
+            <a class="nav-item nav-link navs fs-5" href="/noticeView">Notice</a>
+            <a class="nav-item nav-link navs fs-5" href="/archiveView">Archive</a>
+            <a class="nav-item nav-link navs fs-5" href="/logout">logout</a>
+
+        </div>
+    </div>
+</nav>
+
+
+<div>
+    <a class="nav-item nav-link navs fs-5" href="/addCoursePage">Courses</a>
+    <a class="nav-item nav-link navs fs-5" href="/addform">Advisors</a>
+    <a class="nav-item nav-link navs fs-5" href="/noticeForm">Notice</a>
+    <a class="nav-item nav-link navs fs-5" href="/addArchive">Archive</a>
+</div>
+
+
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Admin | Home</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+
+    <link rel="stylesheet" href="/css/style2.css">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/nav.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+    <script th:src="@{/js/bootstrap.js}"></script>
+
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <link rel="stylesheet" href="/css/style2.css">
+        <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+        <link th:href="@{/css/nav.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+        <script th:src="@{/js/bootstrap.js}"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+            <img src="images/home.svg" alt="logo" width="150" height="100" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse pdd" id="navbarNavAltMarkup">
+            <div class="navbar-nav pad fs-5">
+                <a class="nav-item nav-link navs fs-5 active" href="/Home">Home</a>
+                <a class="nav-item nav-link navs fs-5" href="/adminCourseView">Courses</a>
+                <a class="nav-item nav-link navs fs-5" href="/images">Advisors</a>
+                <a class="nav-item nav-link navs fs-5" href="/noticeView">Notice</a>
+                <a class="nav-item nav-link navs fs-5" href="/archiveView2">Archive</a>
+                <a class="nav-item nav-link navs fs-5" href="/logout">logout</a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" style="margin-left: 10em;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <a class="nav-item nav-link navs fs-5 " href="/addCoursePage">
+                        <div class="container"><img th:src="@{/images/course.svg}" alt="" width="100%" height="200">
+                            <h3 class="text-dark text-center">course</h3>
+                        </div>
+                    </a>
+                </div>
+<h5> Click this Course link and you are straight off to the form where you can add courses, enjoy creating them!</h5>
+                <div class="col-sm-12 align-item-center mt-5">
+                    <a class="nav-item nav-link navs fs-5" href="/addform">
+                        <img th:src="@{/images/advisor.svg}" alt="" width="50%" height="200">
+                        <h3 class="text-dark ms-5">Advisors</h3>
+                    </a>
+                </div>
+                <h5>Click this advisor link and you can add advisors.Let's Log in some Information shall we!</h5>
+                <div class="col-sm-12 align-item-center mt-5">
+                    <a class="nav-item nav-link navs fs-5" href="/noticeForm">
+                        <img th:src="@{/images/notice.svg}" alt="" width="100%" height="200">
+                        <h3 class="text-dark ms-5 text-center">notice</h3>
+                    </a>
+                </div>
+                <h5>Is something new? Tell the students about it by adding a current notice. Click here and you are off to the notice form.</h5>
+                <div class="col-sm-12 align-item-center mt-5">
+                    <a class="nav-item nav-link navs fs-5" href="/archiveView2">
+                        <img th:src="@{/images/book.svg}" alt="" width="50%" height="200"
+                            style="height: 200; width: 200;">
+                        <h3 class="text-dark ms-5">Archive</h3>
+                    </a>
+                </div>
+                <h5>Life is a lot easier if you got available resources laying around! Click to add them here!</h5>
+            </div>
+<br><br>
+        </div>
+    </div>
+
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+
+
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-4 pb-0">
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+                        aria-label="first link"><i class="fab fa-facebook-f"></i></a>
+        
+                    <a class="btn btn-outline-light btn-floating m-1" href="twitter" role="button" aria-label="second link"><i
+                            class="fab fa-twitter"></i></a>
+        
+                    <a class="btn btn-outline-light btn-floating m-1" href="/instagram" role="button" aria-label="third link"><i
+                            class="fab fa-instagram"></i></a>
+        
+                    <a class="btn btn-outline-light btn-floating m-1" href="/linked in" role="button"
+                        aria-label="fourth link"><i class="fab fa-linkedin-in"></i></a>
+        
+                    <a class="btn btn-outline-light btn-floating m-1" href="github" role="button" aria-label="fifth link"><i
+                            class="fab fa-github"></i></a>
+                </section>
+            </div>
+        
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2022 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">AAiTIMS.com</a>
+            </div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+        </footer>
+
+
+</body>
+
+</html>

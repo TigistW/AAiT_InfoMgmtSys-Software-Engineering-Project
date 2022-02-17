@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>addcourse</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/style2.css">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/nav.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+    <script th:src="@{/js/bootstrap.js}"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+            <img th:src="@{/images/home.svg}" alt="logo" width="150" height="100" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    
+        <div class="collapse navbar-collapse pdd" id="navbarNavAltMarkup">
+            <div class="navbar-nav pad fs-5">
+                <a class="nav-item nav-link navs fs-5" href="/Home">Home</a>
+                <a class="nav-item nav-link navs fs-5 active" href="adminCourseView">Courses</a>
+                <a class="nav-item nav-link navs fs-5" href="/images">Advisors</a>
+                <a class="nav-item nav-link navs fs-5" href="/noticeView">Notice</a>
+                <a class="nav-item nav-link navs fs-5" href="/archiveView2">Archive</a>
+                <a class="nav-item nav-link navs fs-5" href="/logout">logout</a>
+    
+            </div>
+        </div>
+    </nav>
+
+<!-- <section class="get-in-touch">
+<h1 class="title">Add course</h1>
+<form class="contact-form row" id="form" method="post" th:action="@{/notice/saveNoticeDetails}">
+    <div class="form-field col-lg-6">
+
+        <input type="text" id="title" class="form-control" th:field="*{titlee}" />
+        <label class="label" for="title">Title</label>
+        <p id="error_name"></p>
+    </div>
+
+    <div class="form-field col-lg-6 ">
+        <input type="text" id="credithour" class="form-control" th:field="*{creditHourr}" />
+        <label class="label" for="credithour">description</label>
+        <p id="error_name"></p>
+    </div>
+
+    <div class="form-field col-lg-12">
+        <input type="text" id="ects" class="form-control" th:field="*{ECTSs}" />
+        <label class="label" for="ects">content</label>
+        <p id="error_name"></p>
+    </div>
+
+    <div class="form-field col-lg-12">
+        <input type="submit" id="submit" class="btn btn-primary submit-btn" value="add">
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary" value="add">update</button>
+    </div>
+
+</form>
+</section> -->
+
+    <div class="container text-center">
+        <h1>admin update courses</h1>
+        <div>
+            <form th:action="@{/updaCourse/{id}(id=${courses.id})}" th:object="${courses}" method="POST"
+                style="max-width: 550px; margin: 0 auto">
+
+
+                <div class="m-3">
+                    <div class="form-group row">
+                        <label class="col-form-label col-4">Title</label>
+                        <div>
+                            <input type="text" class="form-control" th:field="*{titlee}" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="m-3">
+                    <div class="form-group row">
+                        <label class="col-form-label col-4">Credit_Hour</label>
+                        <div>
+                            <input type="text" class="form-control" th:field="*{creditHourr}" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="m-3">
+                    <div class="form-group row">
+                        <label class="col-form-label col-4">ECTS</label>
+                        <div>
+                            <input type="text" class="form-control" th:field="*{ECTSs}" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <button type="submit" class="btn btn-primary" value="add">update</button>
+                </div>
+            </form>
+            <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+
+
+
+
+
+</div>
+</div>
+<br><br><br>
+
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+                aria-label="first link"><i class="fab fa-facebook-f"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="twitter" role="button" aria-label="second link"><i
+                    class="fab fa-twitter"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="/instagram" role="button" aria-label="third link"><i
+                    class="fab fa-instagram"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="/linked in" role="button"
+                aria-label="fourth link"><i class="fab fa-linkedin-in"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="github" role="button" aria-label="fifth link"><i
+                    class="fab fa-github"></i></a>
+        </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">AAiTIMS.com</a>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+</footer>
+</body>
+
+</html>
